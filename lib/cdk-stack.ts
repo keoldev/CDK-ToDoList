@@ -17,12 +17,15 @@ export class CdkStack extends Stack {
       bucketProps: {
         bucketName: 'frontend-resources-todolist',
         removalPolicy: RemovalPolicy.DESTROY,
+        autoDeleteObjects: true,
       },
       cloudFrontLoggingBucketProps: {
         removalPolicy: RemovalPolicy.DESTROY,
+        autoDeleteObjects: true,
       },
       loggingBucketProps: {
         removalPolicy: RemovalPolicy.DESTROY,
+        autoDeleteObjects: true,
       }
     })
     
